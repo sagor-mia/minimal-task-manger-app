@@ -14,7 +14,7 @@ interface and smooth interactions.
 ![Desktop Screenshot](./images/desktop-view.png)
 
 **Mobile View**  
-![Mobile Screenshot](./images/mobile-view.png/mobile-snapshot.png)
+![Mobile Screenshot](./images/mobile-view.png)
 
 ## Features
 
