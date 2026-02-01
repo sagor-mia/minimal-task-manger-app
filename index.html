@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task Manager</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="app">
+      <header>
+        <h1><i class="fas fa-check-circle"></i> My Tasks</h1>
+        <p id="date"></p>
+      </header>
+
+      <div class="todo-input">
+        <input
+          type="text"
+          id="task-input"
+          placeholder="What do you need to do?"
+        />
+        <button id="add-task"><i class="fas fa-plus"></i></button>
+      </div>
+
+      <div class="filters">
+        <span class="filter active" data-filter="all">All</span>
+        <span class="filter" data-filter="active">Active</span>
+        <span class="filter" data-filter="completed">Completed</span>
+      </div>
+
+      <div class="todos-container">
+        <ul id="todos-list">
+          <li class="todo-item">
+            <label class="checkbox-container">
+              <input type="checkbox" class="todo-checkbox" />
+              <span class="checkmark"></span>
+            </label>
+            <span class="todo-item-text">This is a todo list app</span>
+            <button class="delete-btn"><i class="fas fa-times"></i></button>
+          </li>
+        </ul>
+
+        <div class="empty-state hidden">
+          <i class="fas fa-clipboard-list"></i>
+          <p>No tasks here yet</p>
+        </div>
+      </div>
+
+      <footer>
+        <div class="footer-top">
+          <p id="items-left">0 items left</p>
+          <button id="clear-completed">Clear completed</button>
+        </div>
+        <div class="footer-bottom">
+          <p>Developed by ❤ Sagor Mia</p>
+        </div>
+      </footer>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
